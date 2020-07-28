@@ -45,7 +45,7 @@ a:hover, a:focus, a.categories:hover, a.categories:focus {
 
 @keyframes blinker {
   50% {
-    opacity: 0;
+    color: white;
   }
 }
 .diamond{
