@@ -25,6 +25,7 @@
   <!-- Bootstrap Core CSS -->
   <link href='css/bootstrap.min.css' rel='stylesheet'>
   <!-- Custom CSS -->
+  <link href='css/style.css' rel='stylesheet'>
   <link href='css/animate-custom.css' rel='stylesheet'>
   <link href='css/realtalk-styles.css' rel='stylesheet'>
   <!-- Custom Fonts -->
@@ -40,15 +41,31 @@
   <script src='js/lib.js'></script>
   <script src='js/jquery.js'></script>
   <script src='js/bootstrap.min.js'></script>
-  <script>
+  <!-- <script>
     window.onload = function(){
-      alert("We use cookies to improve your experience on our site and to show you relevant advertising. By continuing, you consent to allowing use of your cookies, IP address, social security number, credit card, innermost thoughts, and bodily organs (or body without organs) for all business purposes, and will not hold INTERFACE liable for any resulting consequences.");
+      confirm("We use cookies to improve your experience on our site and to show you relevant advertising. By continuing, you consent to allowing use of your cookies, IP address, social security number, credit card, innermost thoughts, and bodily organs (or body without organs) for all business purposes, and will not hold INTERFACE liable for any resulting consequences.");
     }; 
+  </script> -->
+
+  <script>
+  function hideBanner() {
+    var x = document.getElementById("cookies-banner");
+    x.style.display = "none";
+  } 
   </script>
 
 </head>
 
+
 <body id='page-top' data-spy='scroll' data-target='.navbar-fixed-top' style='background-color:black'>
+  <div id="cookies-banner">
+    <span class='close' onclick="hideBanner()">x</span>
+    <div class="text">
+      <p">We use cookies to improve your experience on our site and to show you relevant advertising. By accepting, you consent to allowing use of your cookies, IP address, social security number, credit card, innermost thoughts, and bodily organs (or body without organs) for all business purposes, and will not hold INTERFACE liable for any resulting consequences.</p>
+      <button class="simple-btn" onclick="hideBanner()" style="background-color:green">Accept</button>
+      <button class="simple-btn" onclick="hideBanner()" style="background-color:gray">Decline</button>
+    </div>
+  </div>
 
   <!-- Intro Header -->
   <header style="text-align:center; color:#FFF; font-family:Courier">

@@ -1,3 +1,31 @@
 a {
   color: orange;
 }
+
+#cookies-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(107, 107, 107, 0.8);
+    color: white;
+    padding: 5px 10px;
+}
+
+#cookies-banner .text {
+    padding: 1em 3em;
+	font-size: 1em;
+}
+
+.simple-btn {
+	border: 0;
+	box-shadow: 0;
+	margin: 0 5px;
+}
+
+.close {
+	float:right;
+	display:inline-block;
+	padding:2px 5px;
+	background:#ccc;
+}
