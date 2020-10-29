@@ -52,6 +52,10 @@
     var x = document.getElementById("cookies-banner");
     x.style.display = "none";
   } 
+
+  function moreCookieInfo() {
+    alert("This is a joke. We have neither the will nor the means to do any of this. This website uses no cookies. \nHowever, it's always good to be aware of what information websites collect about you!");
+  }
   </script>
 
 </head>
@@ -61,7 +65,7 @@
   <div id="cookies-banner">
     <span class='close' onclick="hideBanner()">x</span>
     <div class="text">
-      <p">We use cookies to improve your experience on our site and to show you relevant advertising. By accepting, you consent to allowing use of your cookies, IP address, social security number, credit card, innermost thoughts, and bodily organs (or body without organs) for all business purposes, and will not hold INTERFACE liable for any resulting consequences. <a id="more-info-btn" onclick="alert('This is a joke. We have neither the will nor the means to do any of this.');">More info</a></p>
+      <p">We use cookies to improve your experience on our site and to show you relevant advertising. By accepting, you consent to allowing use of your cookies, IP address, social security number, credit card, innermost thoughts, and bodily organs (or body without organs) for all business purposes, and will not hold INTERFACE liable for any resulting consequences. <a id="more-info-btn" onclick="moreCookieInfo();">More info</a></p>
       <button class="simple-btn" onclick="hideBanner()" style="background-color:green" title="DON'T DO IT ಠ_ಠ">Accept</button>
       <button class="simple-btn" onclick="hideBanner()" style="background-color:gray">Decline</button>
     </div>
