@@ -23,9 +23,35 @@ a {
 	margin: 0 5px;
 }
 
+#more-info-btn {
+	color: lightblue;
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: bold;
+}
+
 .close {
 	float:right;
 	display:inline-block;
 	padding:2px 5px;
 	background:#ccc;
+}
+
+.tooltip-wrap {
+  position: relative;
+}
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  padding: .5em;
+  width: 10em;
+  font-weight: normal;
+  color: gray;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
 }
