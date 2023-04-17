@@ -43,6 +43,12 @@ a:hover, a:focus, a.categories:hover, a.categories:focus {
   animation: blinker 1s linear infinite;
 }
 
+@media (prefers-reduced-motion) {
+    .blink_me {
+      animation: blinker 2.5s linear infinite;
+    }
+}
+
 @keyframes blinker {
   50% {
     color: white;
